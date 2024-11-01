@@ -4,55 +4,48 @@
     padding: 0;
     box-sizing: border-box;
     font-family: Arial, sans-serif;
-}
+  }
   
-body {
+  body {
     background: linear-gradient(135deg, #3a6073, #16222a);
     display: flex;
     justify-content: center;
-    align-items: center; 
+    align-items: center;
     height: 100vh;
     color: #f9f9f9;
     flex-direction: column;
     padding: 20px;
-}
+  }
   
-h1 {
+  h1 {
     text-align: center;
     font-size: 2em;
     margin-bottom: 20px;
     color: #ff6b6b;
     text-shadow: 2px 2px 8px rgba(0, 0, 0, 0.6);
-}
-
-
-@media (max-width: 768px) {
-    h1 {
-        font-size: 1.5em;
-    }
-}
-
-/* Form Styling */
-#userForm {
+  }
+  
+  /* Form Styling */
+  #userForm {
     display: flex;
     flex-direction: column;
     align-items: center;
     margin-bottom: 20px;
     width: 100%;
-    max-width: 400px;
-}
+    max-width: 350px;
+  }
   
-#userForm input {
+  #userForm input {
     width: 100%;
     padding: 10px;
-    margin: 5px;
+    margin: 5px 0;
     border-radius: 5px;
     border: none;
     outline: none;
     box-shadow: inset 2px 2px 5px rgba(0, 0, 0, 0.2);
-}
-
-#userForm button {
+  }
+  
+  #userForm button {
     padding: 10px 20px;
     background: linear-gradient(45deg, #ff6b6b, #ff8e53);
     border: none;
@@ -63,52 +56,48 @@ h1 {
     cursor: pointer;
     transition: all 0.3s ease;
     box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.3);
-}
-
-#userForm button:hover {
+  }
+  
+  #userForm button:hover {
     background: linear-gradient(45deg, #ff8e53, #ff6b6b);
     box-shadow: 0px 8px 15px rgba(0, 0, 0, 0.4);
-}
-
-table {
+  }
+  
+  /* Table Styling */
+  table {
     width: 100%;
     max-width: 600px;
     margin: 0 auto;
     border-collapse: collapse;
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
-}
-
-th, td {
+    overflow-x: auto;
+  }
+  
+  th, td {
     padding: 15px;
     text-align: center;
-}
-
-th {
+  }
+  
+  th {
     background: linear-gradient(45deg, #4b79a1, #283e51);
     color: #f9f9f9;
     text-transform: uppercase;
     font-size: 1em;
-}
-
-td {
+    box-shadow: inset 0 -1px rgba(255, 255, 255, 0.1);
+  }
+  
+  td {
     background: #3a6073;
     color: #f1f1f1;
-}
-
-tr:nth-child(even) td {
+    font-size: 0.9em;
+  }
+  
+  tr:nth-child(even) td {
     background: #34495e;
-}
-
-@media (max-width: 768px) {
-    th, td {
-        padding: 10px;
-    }
-    table {
-        font-size: 0.9em;
-    }
-}
-
-button {
+  }
+  
+  /* Action Button Styling */
+  button {
     padding: 5px 10px;
     margin: 2px;
     border-radius: 5px;
@@ -117,42 +106,32 @@ button {
     transition: all 0.3s ease;
     color: #fff;
     font-size: 0.9em;
-}
-
-button:hover {
+  }
+  
+  button:hover {
     transform: scale(1.1);
-}
-
-button:nth-of-type(1) {
+  }
+  
+  button:nth-of-type(1) {
     background-color: #3498db;
     box-shadow: 0px 5px 8px rgba(52, 152, 219, 0.4);
-}
-
-button:nth-of-type(1):hover {
+  }
+  
+  button:nth-of-type(1):hover {
     background-color: #2980b9;
-}
-
-button:nth-of-type(2) {
+  }
+  
+  button:nth-of-type(2) {
     background-color: #e74c3c;
     box-shadow: 0px 5px 8px rgba(231, 76, 60, 0.4);
-}
-
-button:nth-of-type(2):hover {
+  }
+  
+  button:nth-of-type(2):hover {
     background-color: #c0392b;
-}
-
-@media (max-width: 480px) {
-    table {
-        display: block;
-        overflow-x: auto;
-        width: 100%;
-    }
-    #userForm button, button {
-        font-size: 0.8em;
-    }
-}
-/* CSS */
-footer {
+  }
+  
+  /* Footer Styling */
+  footer {
     background: linear-gradient(45deg, #4b79a1, #283e51);
     color: #f1f1f1;
     text-align: center;
@@ -161,6 +140,7 @@ footer {
     bottom: 0;
     width: 100%;
     box-shadow: 0 -2px 10px rgba(0, 0, 0, 0.3);
+    margin-top: 20px;
   }
   
   footer p {
@@ -170,5 +150,26 @@ footer {
   
   footer p span {
     color: #ff6b6b;
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 600px) {
+    h1 {
+      font-size: 1.5em;
+    }
+  
+    #userForm, table {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    th, td {
+      font-size: 0.8em;
+      padding: 10px;
+    }
+  
+    #userForm button {
+      width: 100%;
+    }
   }
   
