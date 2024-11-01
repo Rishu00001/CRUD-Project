@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CRUD</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h1>LNMCBM Database</h1>
+  <form id="userForm">
+    <input type="text" id="name" placeholder="Name" required>
+    <input type="email" id="email" placeholder="Email" required>
+    <input type="text" id="role" placeholder="Course" required>
+    <button type="submit">Add User</button>
+  </form>
+  <table id="userTable">
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Email</th>
+        <th>Course</th>
+        <th>Actions</th>
+      </tr>
+    </thead>
+    <tbody></tbody>
+  </table>
+  <!-- HTML -->
+<footer>
+    <p>&copy; <span id="year"></span> Ritik Raj. All Rights Reserved.</p>
+  </footer>
+  
+  <script src="script.js"></script>
+</body>
+</html>
